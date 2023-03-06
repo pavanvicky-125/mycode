@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Upload</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: blue;
+			font-family: Arial, Helvetica, sans-serif;
+			color: white;
+		}
+
+		form {
+			background-color: green;
+			padding: 20px;
+			margin: 100px auto;
+			max-width: 400px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h2 {
+			text-align: center;
+        }
+        
+        h4 {
+            text-align: center;
+		}
+
+		p {
+			text-align: left; /* set text-align to left */
+		}
+
+		input[type=file] {
+			margin: 20px auto;
+			display: block;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form action="upload.php" method="POST" enctype="multipart/form-data">
+		<h2>Upload Documents</h2>
+		<h4>Select a file to upload:</h4>
+        <p>1. Graduation Provisional Certificate</p>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <p>2. Consolidated Marks Memo</p>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <p>3. Intermediate Mraks Memo</p>
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+        <p>4. 10th Class Marks Memo</p>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <button type="submit" name="submit">Upload</button>
+
+        </form>
+</body>
+</html>
